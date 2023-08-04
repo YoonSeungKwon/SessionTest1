@@ -7,6 +7,6 @@ import yoon.test.sessionTest1.domain.Members;
 @Repository
 public interface MemberRepository extends JpaRepository<Members, Long> {
 
-
+    Members findMembersByEmail(String email);
 
 }
